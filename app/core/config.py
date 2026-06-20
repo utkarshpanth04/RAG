@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ENV_PATH = BASE_DIR / ".env"
 DB_DIR = str(BASE_DIR / "chroma_db")
-PDF_PATH = str(BASE_DIR / "data" / "Edge AI Research Paper.pdf")
+PDF_DIR = str(BASE_DIR / "data")  # All PDFs in this folder will be ingested
 
 # 2. Centralized Model Configurations
 EMBEDDING_MODEL_NAME = "embed-english-v3.0"
